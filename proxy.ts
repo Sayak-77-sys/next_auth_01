@@ -31,4 +31,3 @@ export const config = {
   // Apply to all paths except Next.js internals and public assets
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
-
