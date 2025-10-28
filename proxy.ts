@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const token = request.cookies.get("token")?.value || "";
 
@@ -31,3 +31,4 @@ export const config = {
   // Apply to all paths except Next.js internals and public assets
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
+
